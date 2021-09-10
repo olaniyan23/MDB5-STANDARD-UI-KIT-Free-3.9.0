@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+.nav-border ul li::after{
+  content: " ";
+width: 0;
+height: 2px;
+display: block;
+background: hotpink;
+transition: .5s ease;
+}
+.nav-border ul li:hover::after{
+  width: 100%;
+}
+
+.divider {
+  background: white;
+  height: 40vh;
+  z-index: 3;
+}
+.divider-text {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+@media (max-width: 993px) {
+  .divider {
+    height: 60vh;
+  }
+}
+@media (max-width: 575px) {
+  .divider {
+    height: 80vh;
+  }
+  .divider-text {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+}
+.row-fixed {
+  flex-direction: column;
+}
+@media (max-width: 1388px) {
+  .row-fixed h2 {
+    margin-top: 30px;
+  }
+}
+.banner {
+  width: 100%;
+  height: 97vh;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/images/food1.webp);
+}
+
+.wave {
+  position: absolute;
+  bottom: 0px;
+}
+.text-font h1 {
+  text-transform: capitalize;
+  font-size: 45px;
+  margin-left: 2rem;
+}
+.text-font {
+  height: 80vh;
+  width: 60%;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 3.5rem;
+}
+.abt-text {
+  text-align: left;
+}
+.abt-text:nth-of-type(2) {
+  text-align: right;
+}
+
+.text-font h6 {
+  margin-bottom: 0.5rem !important;
+  font-family: cursive;
+}
+@media (max-width: 575px) {
+  .text-font h1 {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: lowercase;
+    margin-left: 0px;
+  }
+  .text-font {
+    margin-left: 0px;
+    width: 70%;
+  }
+}
+.img-ride {
+  height: 300px;
+  width: 4500px;
+}
+.about {
+  position: relative;
+  background-color: rgba(0, 0, 0, 1);
+  margin-left: 0rem !important ;
+  margin-right: 0rem !important ;
+}
+@media (max-width: 771px) {
+  .abt-text:nth-of-type(2) {
+    text-align: left;
+  }
+}
+
+#book {
+  background-image: url(../img/images/food8.webp);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.team p{
+text-align: left;
+}
+
+/* .waves{
+    z-index: 14;
+} */
